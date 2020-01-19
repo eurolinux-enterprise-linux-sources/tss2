@@ -1,0 +1,12 @@
+diff -ur a/utils/eventlib.c b/utils/eventlib.c
+--- a/utils/eventlib.c	2016-07-15 11:49:19.000000000 -0700
++++ b/utils/eventlib.c	2017-04-04 10:44:02.325327667 -0700
+@@ -471,7 +471,7 @@
+ 
+     /* validate PCR number */
+     if (rc == 0) {
+-	if (event2->pcrIndex > 8) {
++	if (event2->pcrIndex > 7) {
+ 	    printf("ERROR: TSS_EVENT2_PCR_Extend: PCR number %u out of range\n", event2->pcrIndex);
+ 	    rc = 1;
+ 	}

@@ -1,0 +1,12 @@
+diff -ur a/utils/tssmarshal.c b/utils/tssmarshal.c
+--- a/utils/tssmarshal.c	2016-07-15 11:49:19.000000000 -0700
++++ b/utils/tssmarshal.c	2017-04-04 09:51:45.206700007 -0700
+@@ -5689,7 +5689,7 @@
+ 	    rc = TSS_UINT16_Marshal(&sizeWritten, written, &sizePtr, size);
+ 	}
+ 	else {
+-	    written += sizeof(UINT16);
++	    *written += sizeof(UINT16);
+ 	}
+     }
+     return rc;

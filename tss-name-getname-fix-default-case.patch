@@ -1,0 +1,14 @@
+diff -ur a/utils/tss.c b/utils/tss.c
+--- a/utils/tss.c	2016-08-09 13:28:08.000000000 -0700
++++ b/utils/tss.c	2017-04-04 14:16:31.353338364 -0700
+@@ -1293,9 +1293,9 @@
+ 	rc = TSS_Name_Load(tssContext, name, handle, NULL);
+ 	break;
+       default:
+-	break;
+ 	if (tssVerbose) printf("TSS_Name_GetName: not implemented for handle %08x\n", handle);
+ 	rc = TSS_RC_NAME_NOT_IMPLEMENTED;
++	break;
+     }
+     return rc;
+ }

@@ -1,0 +1,11 @@
+diff -ur a/utils/contextload.c b/utils/contextload.c
+--- a/utils/contextload.c	2016-07-15 11:49:19.000000000 -0700
++++ b/utils/contextload.c	2017-04-04 16:04:33.262542203 -0700
+@@ -91,6 +91,7 @@
+     }
+     if (contextFilename == NULL) {
+ 	printf("Missing context file parameter -if\n");
++	printUsage();
+     }
+     if (rc == 0) {
+ 	rc = TSS_File_ReadStructure(&in.context,
